@@ -1,17 +1,15 @@
-import ProductCard from "../components/ProductCard"
+import { useSearchParams } from "react-router-dom"
+import ProductCarousel from "../components/ProductCarousel"
+import Points from "../components/Points"
 
 function Home() {
-
+  const [params] = useSearchParams()
+  const userPoints = parseInt(params.get('points') || '0', 10)
   return (
     <main className="bg-primary px-4 pb-8 max-w-[400px] mx-auto">
         <div className="container bg-white ">
-            <h1 className="text-4xl font-bold text-primary">TEST</h1>
-            <ProductCard
-              name="Test"
-              image="/images/products/water.png"
-              isLocked={true}
-              pointsRequired={500}
-            />
+          <Points points={userPoints} />
+          <ProductCarousel />
         </div>
     </main>
   )

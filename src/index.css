@@ -1,6 +1,5 @@
-@import "./assets/fonts/fonts.css";
-@import "tailwindcss";
-
+@import './assets/fonts/fonts.css';
+@import 'tailwindcss';
 
 /* Default UI, colors, fonts */
 @theme {
@@ -8,21 +7,23 @@
   --font-medium: 'Sweet Sans Pro Medium', sans-serif;
   --font-bold: 'Sweet Sans Pro Bold', sans-serif;
 
-
   --color-primary: #083323;
-  --color-secondary: #B7DBA9;
+  --color-secondary: #b7dba9;
+  --color-green-400: #E6EFD5;
+  --color-grey: #C8C8C8;
   --color-text: #083323;
 }
 
 
-h1, h2, h3 {
-  font-weight: 700;
+h1,
+h2,
+h3 {
+  font-family: var(--font-bold);
 }
 
 p {
- font-size: 14px;
- letter-spacing: -0.5px;
- line-height: 120%;
- font-weight: 400;
- color: var(--color-text);
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  line-height: 120%;
 }
+

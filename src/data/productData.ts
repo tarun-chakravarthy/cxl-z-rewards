@@ -44,7 +44,7 @@ export const ProductGroups: ProductGroup[] =[
         {
             id: '2',
             name: 'Choco Brownie',
-            image: '/images/brownie.png'
+            image: '/images/products/brownie.png'
         },
         {
             id: '3',
@@ -86,12 +86,12 @@ export const ProductGroups: ProductGroup[] =[
         {
             id: '2',
             name: 'Burrito',
-            image: '/images/small-burrito-wrap.png'
+            image: '/images/products/small-burrito-wrap.png'
         },
         {
             id: '3',
             name: 'Burrito Bowl',
-            image: '/images/small-bowl.png'
+            image: '/images/products/small-bowl.png'
         }
     ]
    },
@@ -107,7 +107,7 @@ export const ProductGroups: ProductGroup[] =[
         {
             id: '2',
             name: ' Large Burrito Bowl',
-            image: '/images/nachos.png'
+            image: '/images/products/nachos.png'
         }
     ]
    },
