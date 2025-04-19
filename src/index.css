@@ -11,4 +11,18 @@
 
   --color-primary: #083323;
   --color-secondary: #B7DBA9;
+  --color-text: #083323;
+}
+
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+p {
+ font-size: 14px;
+ letter-spacing: -0.5px;
+ line-height: 120%;
+ font-weight: 400;
+ color: var(--color-text);
 }
