@@ -2,7 +2,7 @@ import { FC, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { ProductGroups } from '../data/productData';
 import ProductCard from './ProductCard';
-import chevronRight from '../assets/chevron-right.svg'
+import chevronRight from '../assets/chevron-right.svg';
 
 const ProductCarousel: FC = () => {
     const [params] = useSearchParams();
@@ -36,7 +36,7 @@ const ProductCarousel: FC = () => {
     return (
         <>
         <div className='overflow-x-scroll' style={{scrollbarWidth: 'none', msOverflowStyle: 'none'}}>
-            <div className='flex px-1 gap-4 snap-x snap-mandatory scroll-smooth ml-[20px]'>
+            <div className='flex px-1 gap-4 snap-x snap-mandatory scroll-smooth ml-[20px] pb-[30px]'>
                 {carouselItems.map((item, index) => (
                     <div key={index} className='shrink-0'>
                         <ProductCard
@@ -52,7 +52,7 @@ const ProductCarousel: FC = () => {
                     <a href='/?uid=1&points=500' className='font-medium  max-h-[100px] text-primary hover:underline inline-block items-center h-auto'>
                     See More
                     </a>
-                    <img src={chevronRight} alt="icon" />
+                    <img src={chevronRight} alt='icon' />
                 </div>
             </div>
         </div>

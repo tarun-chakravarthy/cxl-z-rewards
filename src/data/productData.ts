@@ -38,7 +38,7 @@ export const ProductGroups: ProductGroup[] =[
     products: [
         {
             id: '1',
-            name: 'Ice Cream Sandwich',
+            name: 'Vanilla lace Ice Cream Sandwich',
             image: '/images/products/ice-cream.png'
         },
         {
@@ -60,7 +60,7 @@ export const ProductGroups: ProductGroup[] =[
         {
             id: '1',
             name: 'Corn Chips',
-            image: '/images/products/pepsi.png'
+            image: '/images/products/nachos-pack.png'
         },
         {
             id: '2',

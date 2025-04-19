@@ -16,9 +16,9 @@ const ProductCard: React.FC<ProductCardProps> = ({
   isLocked,
 }) => {
   return (
-    <div className='relative w-[107px] h-[180px] flex-shrink-0'>
+    <div className='relative w-[107px] min-h-[180px] flex-shrink-0'>
       <div className={`${isLocked ? 'opacity-50' : ''} h-full w-full`}>
-        <div className='h-[100px] w-full flex items-center justify-center bg-[#E6EFD5]'>
+        <div className='h-[100px] w-full flex items-center justify-center bg-[#c5e0ae]'>
           <img
             src={image}
             alt={name}
@@ -26,7 +26,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
           />
         </div>
         <div className='bg-primary py-[4px]'>
-          <span className='text-white text-center block text-sm font-regular'>
+          <span className='text-white text-center block text-[12px] leading-2 font-regular'>
             {pointsRequired} pts
           </span>
         </div>
