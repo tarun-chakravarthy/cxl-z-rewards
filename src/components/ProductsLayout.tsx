@@ -25,7 +25,6 @@ const ProductsLayout: React.FC<ProductsLayoutProps> =({products, pointsRequired}
                         </div>
                     )
                 )}
-
             </div>
         </div>
     )

@@ -35,7 +35,7 @@ const MilestoneBar: React.FC<MilestoneBarProps> = ({
         })}
       </div>
 
-      <div className='absolute top-full left-0 w-full flex text-center justify-between mt-1 text-sm text-black font-regular'>
+      <div className='absolute top-full left-0 w-full flex text-center justify-between mt-1 text-[12px] text-black font-regular'>
         {milestones.map((m, i) => (
           <span key={i} className='translate-x-[-50%]' style={{ position: 'absolute', left: `${(m / maxPoints) * 100}%` }}>{m}</span>
         ))}

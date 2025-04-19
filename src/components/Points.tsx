@@ -9,7 +9,7 @@ const Points: React.FC<PointsProps> = ({ points }) => {
   return (
     <div className='text-left flex justify-between pt-[30px] pb-[24px]'>
       <div>
-        <h1 className='text-4xl font-bold text-primary'>{points > 0 ? `< ${points} >` : points}</h1>
+        <h1 className='text-4xl font-bold text-primary'>{points > 0 ? `<${points}>` : points}</h1>
         <p className='font-regular'>points</p>
       </div>
       <Button text='Redeem now' />
